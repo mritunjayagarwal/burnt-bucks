@@ -1,0 +1,67 @@
+html, body{
+    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #000;
+}
+
+.navbar-brand{
+    color: #FFFFE7;
+    font-weight: 700;
+}
+
+.navbar{
+    padding: 30px 50px;
+    background: linear-gradient(180deg, #00050C 59.37%, #1E243A 100%);
+}
+
+.nav-item a{
+    color: #FFFFE7B5;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.nav-item a:hover{
+    color: #FFFFE7;
+    text-decoration: none;
+}
+
+.buy-btn{
+    background: #FFFFE7;
+    border-radius: 50px;
+    padding: 5px 50px;
+    border: none;
+    margin-top: -10px;
+    font-weight: 600;
+}
+
+header{
+    padding: 50px 0 150PX 0;
+    background: url('../img/blur_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-heading{
+    color: #FFFFE7;
+    font-size: 120px;
+    font-weight: 700;
+    margin: -20px 0 0px 0;
+    letter-spacing: 0px;
+}
+
+.highlight{
+    font-size: 170px;
+}
+
+/* Tokenomics Section */
+
+.toke-item{
+    padding: 1em;
+    color: #FFFFE7;
+}
+
+.toke-item p{
+    text-align: justify;
+}
