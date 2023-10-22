@@ -5,6 +5,10 @@ html, body{
     background: #000;
 }
 
+main{
+    margin-top: -100px
+}
+
 .navbar-brand{
     color: #FFFFE7;
     font-weight: 700;
@@ -13,6 +17,7 @@ html, body{
 .navbar{
     padding: 30px 50px;
     background: linear-gradient(180deg, #00050C 59.37%, #1E243A 100%);
+    z-index: 90;
 }
 
 .nav-item a{
@@ -36,7 +41,7 @@ html, body{
 }
 
 header{
-    padding: 50px 0 150PX 0;
+    padding: 50px 0 150px 0;
     background: url('../img/blur_bg.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -65,3 +70,66 @@ header{
 .toke-item p{
     text-align: justify;
 }
+
+.warning-section{
+    display: none;
+}
+
+.warning-wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 999 !important;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.warning{
+    background: #fff;
+    width: 80%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    html, body{
+        overflow: hidden;
+    }
+
+    .warning-section{
+        display: block;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    main{
+        margin-top: -50px !important;
+    }
+
+    header{
+        padding: 70px 0 100px 0;
+    }
+
+    .hero-heading{
+        font-size: 60px;
+    }
+
+    .highlight{
+        font-size: 80px;
+    }
+
+    .toke-heading{
+        font-size: 25px;
+    }
+
+    .toke-para{
+        font-size: 15px;
+    }
+
+    .buy-btn{
+        width: 100%;
+        margin-top: 10px;
+    }
+  }
