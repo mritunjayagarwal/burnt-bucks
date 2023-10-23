@@ -229,8 +229,8 @@ header{
       top: -100vw;
       left: 0px;
       
-      height:90vw !important;
-      width:100vh !important;
+      height:100vw !important;
+      width:95vh !important;
       background-color:#000;
       color:#fff;
       overflow: auto;
