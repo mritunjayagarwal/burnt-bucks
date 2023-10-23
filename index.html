@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <main class = "wrapper">
+    <main class="wrapper">
         <header>
             <nav class="navbar navbar-expand-lg navbar-inverse py-2 pt-2 m-0 fixed-top">
                 <!-- Container wrapper -->
@@ -22,13 +22,13 @@
                 <a class="navbar-brand me-2" href="#">
                     Burnt Bucks
                 </a>
-    
+
                 <!-- Toggle button -->
                 <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-    
+
                 <!-- Collapsible wrapper -->
                 <div class="collapse navbar-collapse text-white" id="navbarText">
                     <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
@@ -44,7 +44,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="https://nova-network.gitbook.io/nova-network-whitepaper/" class="px-3 pt-2 btn-link">
+                            <a href="https://nova-network.gitbook.io/nova-network-whitepaper/"
+                                class="px-3 pt-2 btn-link">
                                 Home
                             </a>
                         </li>
@@ -81,7 +82,7 @@
                     <div class="col-2 text-center">
                         <div class="toke-item">
                             <img src="./assets/img/coin.png" class="img-fluid" alt="">
-    
+
                             <div class="d-flex justify-content-center">
                                 <a class="btn btn-social">Telegram</a>
                             </div>
@@ -90,7 +91,7 @@
                     <div class="col-2 text-center">
                         <div class="toke-item">
                             <img src="./assets/img/coin.png" class="img-fluid" alt="">
-    
+
                             <div class="d-flex justify-content-center">
                                 <a class="btn btn-social">Twitter</a>
                             </div>
@@ -99,7 +100,7 @@
                     <div class="col-2 text-center">
                         <div class="toke-item">
                             <img src="./assets/img/coin.png" class="img-fluid" alt="">
-    
+
                             <div class="d-flex justify-content-center">
                                 <a class="btn btn-social">Medium</a>
                             </div>
@@ -108,7 +109,7 @@
                     <div class="col-2 text-center">
                         <div class="toke-item">
                             <img src="./assets/img/coin.png" class="img-fluid" alt="">
-    
+
                             <div class="d-flex justify-content-center">
                                 <a class="btn btn-social">Ether Scan</a>
                             </div>
@@ -117,7 +118,7 @@
                     <div class="col-2 text-center">
                         <div class="toke-item">
                             <img src="./assets/img/coin.png" class="img-fluid" alt="">
-    
+
                             <div class="d-flex justify-content-center">
                                 <a class="btn btn-social">Dextools</a>
                             </div>
@@ -127,18 +128,20 @@
             </section>
             <hr class="mt-5" style="width:70%; margin: auto;background: #E8E8E8;opacity: 0.2" />
             <footer class="pt-3">
-                <p class="text-center" style="color: rgba(255, 255, 255, 0.65)">© 2023 BurntBucks | All Rights Reserved</p>
+                <p class="text-center" style="color: rgba(255, 255, 255, 0.65)">© 2023 BurntBucks | All Rights Reserved
+                </p>
             </footer>
         </div>
     </main>
-    <!-- <div class="warning-section">
+    <div class="warning-section" id="warning-section">
         <div class="warning-wrapper">
-            <div class="warning">
-                <h1><img src="assets/img/rotate.png" style="width: 50px" class="mr-2" />Rotate Your Phone</h1>
-                <p class="mt-3">Enable Screen Rotation and Rotate your phone into landscape mode to view the website</p>
+            <div class="text-center">
+                <img src="./assets/img/favicon.png" class="img-fluid" onclick="play()" alt="">
+                <p style = "margin-top: -50px; font-weight: 700; color: #fff; font-size: 25px;">Tap Logo To Enter</p>
             </div>
         </div>
-    </div> -->
+    </div>
+    <audio id="audio" src="./music.mp3"></audio>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -149,6 +152,15 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        function play() {
+            var audio = document.getElementById("audio");
+            audio.loop = "true";
+            audio.play();
+            document.getElementById("warning-section").style.display = "none";
+        }
+
+    </script>
 </body>
 
 </html>
