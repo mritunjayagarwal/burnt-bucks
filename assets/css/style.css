@@ -81,16 +81,30 @@ header{
     left: 0;
     right: 0;
     bottom: 0;
-    background: #000;
+    background: #FB9944;
     z-index: 999 !important;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 
-.warning{
-    background: #fff;
-    width: 80%;
+.warning {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: #fff;
+  width: 90%;
+  padding: 2em 3em;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 0px 2px #131415;
+  font-family: "Open Sans", sans-serif;
+}
+
+.warning h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  letter-spacing: -1px;
 }
 
 .btn-social {
@@ -103,7 +117,6 @@ header{
     color: #000 !important;
     border-radius: 10px;
     border: 2px solid #FDAD4C;
-    margin-left: -15px;
     margin-top: 20px;
     font-weight: 700;
   }
@@ -181,6 +194,10 @@ header{
 
     .warning-section{
         display: block;
+    }
+
+    main, header{
+      display: none;
     }
   }
 
