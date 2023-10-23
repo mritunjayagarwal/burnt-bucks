@@ -1,6 +1,6 @@
 html, body{
     max-width: 100%;
-    overflow-y: hidden;
+    overflow-y: auto;
     overflow-x: hidden;
     background: #000;
 }
@@ -82,7 +82,7 @@ header{
     left: 0;
     right: 0;
     bottom: 0;
-    background: #FB9944;
+    background: rgb(251, 153, 68);
     z-index: 999 !important;
     display:flex;
     align-items: center;
@@ -215,7 +215,8 @@ header{
       box-shadow: 0 -35px 40px 30px rgba(255, 130, 10, 0), 0 -30px 30px 10px rgba(230, 30, 10, 0), 0 -20px 10px 0 rgba(255, 255, 10, 0);
     }
   }
-  @media screen and (max-width: 850px){
+
+  @media only screen and (max-width: 850px) {
 
     .wrapper{
       transform: rotate(90deg);
